@@ -1,0 +1,126 @@
+* {
+	font-family: 'Noto Sans', Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+.banner {
+	height: 250px;
+	background-color: #106F92;
+	padding: 40px;
+	margin: auto;
+	font-size: 40px;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35);
+}
+
+.bannerTitle {
+	color: #00AFCE;
+}
+
+.bannerDescription {
+	font-style: italic;
+	font-size: 18px;
+	color: #00AFCE;
+	padding: 10px;
+}
+
+.bannerButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	border: 2px #00AFCE solid;
+	color: #00AFCE;
+	border-radius: 30px;
+	width: 300px;
+	height: 40px;
+	padding: 0px 30px;
+	background-color: #FFFFFF;
+	margin: 10px auto;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35);
+	cursor: pointer;
+}
+
+.bannerButton:hover {
+	color: #FFFFFF;
+	background-color: #00AFCE;
+	box-shadow: none;
+}
+
+.emailText {
+	padding: 30px 40px;
+	margin: 0 auto;
+	line-height: 2.0;
+	text-align: center;
+	font-size: 18px;
+}
+
+.demo {
+	font-size: 14px;
+}
+
+.link {
+	text-decoration: underline;
+	color: #00AFCE;
+	cursor: pointer;
+}
+
+.socialMedia {
+	font-size: 12px;
+	color: #00AFCE;
+	padding: 30px;
+}
+
+.mediaSymbol {
+	margin: 10px 0px;
+	width: 40px;
+	height: 40px;
+}
+
+.center {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.footer {
+	padding: 0px 20px;
+	font-size: 12px;
+	display: inline-block;
+}
+
+.spacer {
+	display: inline;
+	margin: 0px 3px;
+}
+
+.credits {
+	font-size: 12px;
+	margin: 0 auto;
+}
+
+.copyright {
+	font-size: 12px;
+	color: #CCCCCC;
+}
+
+@media only screen and (max-width: 600px) 
+{
+		.bannerTitle {
+			font-size: 36px;
+		}
+
+		.bannerDescription {
+			font-size: 16px;
+		}
+}
+
+@media only screen and (max-width: 485px) 
+{
+		.bannerTitle {
+			font-size: 28px;
+
+		}
+
+		.bannerDescription {
+			font-size: 16px;
+		}
+}

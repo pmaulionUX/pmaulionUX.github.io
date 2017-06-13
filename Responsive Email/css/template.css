@@ -1,0 +1,90 @@
+/* ensure that clients don't add any padding or spaces around the email design and allow us to style emails for the entire width of the preview pane */
+body, #bodyTable {
+	height:100% !important;
+	width:100% !important;
+	margin:0;
+	padding:0;
+}
+		
+/* Ensures Webkit- and Windows-based clients don't automatically resize the email text. */
+body,
+table,
+td,
+p,
+a,
+li,
+blockquote {
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+}
+
+/* Forces Yahoo! to display emails at full width */
+.thread-item.expanded .thread-body .body,
+.msg-body {
+	width: 100% !important;
+	display: block !important;
+}
+
+/* Forces Hotmail to display emails at full width */
+.ReadMsgBody,
+.ExternalClass {
+	width: 100%;
+	background-color: #f4f4f4;
+}
+
+/* Forces Hotmail to display normal line spacing. */
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+	line-height:100%;
+}
+
+/* Resolves webkit padding issue. */
+table {
+	border-spacing:0;
+}
+
+/* Resolves the Outlook 2007, 2010, and Gmail td padding issue, and removes spacing around tables that Outlook adds. */
+table,
+td {
+	border-collapse:collapse;
+	mso-table-lspace:0pt;
+	mso-table-rspace:0pt;
+}
+    
+/* Corrects the way Internet Explorer renders resized images in emails. */
+img {
+   	-ms-interpolation-mode: bicubic;
+}
+    
+/* Ensures images don't have borders or text-decorations applied to them by default. */
+img,
+a img {
+   	border:0;
+   	outline:none;
+   	text-decoration:none;	    
+}
+
+/* Styles Yahoo's auto-sensing link color and border */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+    
+/* Styles the tel URL scheme */
+a[href^=tel],
+.mobile_link,
+.mobile_link a {
+    color:#222222 !important;
+	text-decoration: underline !Important;
+}
+   
+/* Apple Mail doesn't support max-width, so we use media queries to constrain the email container width. */
+@media only screen and (min-width: 601px) {
+		.email-container {
+			width: 600px !important;
+	}
+}
+     
