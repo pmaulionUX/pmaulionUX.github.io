@@ -1,0 +1,76 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+.topLogo {
+	display: flex;
+	justify-content: center;
+	margin: 20px auto;
+	width: 60px;
+	height: 60px;
+}
+
+img {
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+.emailBody {
+	background-color: #bdf1ff;
+	color: #016e91;
+	padding: 10px 30px 20px 30px;
+	font-size: 18px;
+}
+
+.noGutter {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+p {
+	font-size: 18px;
+	margin: 0px;
+}
+
+.rowButton {
+	background-color: #d0f5ff;
+	padding: 20px 0px;
+	border-bottom-left-radius: 20px;
+}
+
+.emailButton {
+	display: block;
+	margin: 0 auto;
+	padding: 15px 30px;
+	border-radius: 13px;
+	background-color: #039dc6;
+	border: none;
+	cursor: pointer;
+}
+
+.emailButton:hover {
+	background-color: #039dc6;
+	border: none;
+}
+
+.footer, span {
+	color: #016e91;
+	padding: 20px;
+	font-size: 10px;
+	text-align: center;
+	line-height: 1.25;
+}
+
+.underline {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.bottomLogo {
+	display: block;
+	margin: 20px auto;
+	width: 150px;
+	height: 75px;
+	transform: translateY(-40px);
+}
